@@ -1,0 +1,51 @@
+@import "../../../partials/variables";
+@import "../../../partials/mixins";
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  min-height: $mainPage-height;
+
+  .home_box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    @include inputBox;
+    background-color: rgb(206, 206, 206);
+
+    .infoBox {
+      padding: 5px;
+
+      p {
+        padding: 10px 0;
+        border-bottom: 1px solid $main_object_color;
+        text-align: center;
+        margin: 10px 5px;
+      }
+      .link_box {
+        display: flex;
+        justify-content: center;
+
+        a {
+          word-wrap: break-word;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-mobile) {
+  .Home {
+
+    .home_box {
+      .infoBox {
+        .link_box {
+            display: block;
+        }
+      }
+    }
+  }
+}

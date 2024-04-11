@@ -1,0 +1,19 @@
+.Error {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Error h1 {
+  font-size: 3.125em;
+  color: rgb(25, 25, 53);
+}
+.Error a {
+  font-size: 4.375em;
+}
+.Error a *:hover {
+  box-shadow: 0 0 10px white;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}/*# sourceMappingURL=Error.css.map */

@@ -1,0 +1,40 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+}
+.Home .home_box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(226, 125, 125, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+  border: 2px solid rgb(57, 57, 57);
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(206, 206, 206);
+}
+.Home .home_box .infoBox {
+  padding: 5px;
+}
+.Home .home_box .infoBox p {
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(25, 25, 53);
+  text-align: center;
+  margin: 10px 5px;
+}
+.Home .home_box .infoBox .link_box {
+  display: flex;
+  justify-content: center;
+}
+.Home .home_box .infoBox .link_box a {
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .Home .home_box .infoBox .link_box {
+    display: block;
+  }
+}/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,21 @@
+@import "../../../../../partials/mixins";
+
+.inputBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 15px;
+  flex-wrap: wrap;
+  @include inputBox;
+  margin-bottom: 10px;
+
+  p {
+    flex: 1;
+    white-space: nowrap;
+    color: white;
+  }
+  input {
+    flex: 5;
+    margin-left: 20px;
+  }
+}

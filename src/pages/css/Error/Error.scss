@@ -1,0 +1,23 @@
+@import "../../../partials/variables";
+@import "../../../partials/fuctions";
+@import "../../../partials/mixins";
+
+.Error{
+    height: $mainPage-height;
+    @include flex-center;
+    flex-direction: column;
+
+    h1{
+        font-size: em(50px);
+        color: $blue;
+    }
+    a{
+        font-size: em(70px);
+        
+        *:hover{
+            box-shadow: 0 0 10px white;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+    }
+}
