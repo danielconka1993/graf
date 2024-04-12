@@ -10,5 +10,5 @@ http://localhost:3000/graf?data1=23,12,71,49,33,100,2,88&data2=22,67,33,98,1,3,9
 Netlify - The project can be viewed here:
 https://aesthetic-narwhal-945fda.netlify.app/
 
-or on GitHub:
+or on GitHub (The project works on the master branch):
 https://github.com/danielconka1993/graf
