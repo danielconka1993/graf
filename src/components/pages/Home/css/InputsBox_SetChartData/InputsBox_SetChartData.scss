@@ -9,4 +9,11 @@
     margin: 8px 0;
     text-align: center;
   }
+  .button_box {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+    padding: 0 10px;
+  }
 }

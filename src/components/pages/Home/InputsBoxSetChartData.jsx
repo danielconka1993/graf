@@ -11,6 +11,8 @@ const InputsBoxSetChartData = () => {
     data1: "",
     data2: "",
   });
+  
+  const[error,setError] = useState("")
 
   const handleInputChange = (name, value) => {
     setForm((prevState) => ({
@@ -31,6 +33,7 @@ const InputsBoxSetChartData = () => {
         value={form.data1}
         title="První pole hodnot:"
         regex="numbers_dot_commas"
+        setError={setError}
       />
 
       <InputBox
@@ -40,10 +43,15 @@ const InputsBoxSetChartData = () => {
         value={form.data2}
         title="Druhé pole hodnot:"
         regex="numbers_dot_commas"
+        setError={setError}
       />
 
       <div className="button_box">
-        <BTNSubmit form={form} navigate={navigate} />
+        <div className="text_box">
+          <p className="error">{error}</p>
+        </div>
+        
+        <BTNSubmit form={form} navigate={navigate} setError={setError}/>
       </div>
     </div>
   );

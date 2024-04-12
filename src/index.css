@@ -52,16 +52,11 @@ h1 {
   margin: 15px;
 }
 
-.button_box {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;
-}
 .button_box button,
 .button_box input[type=submit] {
   cursor: pointer;
   border: 2px solid rgb(57, 57, 57);
-  padding: 5px 10px 4px 10px;
+  padding: 8px 10px 7px 10px;
   border-radius: 10px;
   transition: all 0.3s linear;
 }
