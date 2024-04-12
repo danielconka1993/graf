@@ -23,3 +23,7 @@ $title_text_color: rgb(0, 140, 255);
 
 
 $a-color: rgb(25, 25, 53);
+
+@media(max-width: $media-mobile){
+    $mainPage-height: calc(100vmin - ($header-height + $footer-height));
+}
