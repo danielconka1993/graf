@@ -1,10 +1,10 @@
 import { useState } from "react";
 import InputBox from "../../elements/div/InputBox";
 import { useNavigate } from "react-router-dom";
-import "./css/InputsBox_SetChartData/InputsBox_SetChartData.css"
+import "./css/InputsBox_SetChartData/InputsBox_SetChartData.css";
 import BTNSubmit from "./buttonSubmit/BTNSubmit";
 
-const InputsBox_SetChartData = () => {
+const InputsBoxSetChartData = () => {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
@@ -23,6 +23,7 @@ const InputsBox_SetChartData = () => {
     <div className="InputsBox_SetChartData">
       <h2>Data pro graf</h2>
       <p>Zadejte do pole čísla 0-100, * 8</p>
+      
       <InputBox
         name="data1"
         placeholder="Zadejte (0-100,)*8"
@@ -31,6 +32,7 @@ const InputsBox_SetChartData = () => {
         title="První pole hodnot:"
         regex="numbers_dot_commas"
       />
+
       <InputBox
         name="data2"
         placeholder="Zadejte (0-100,)*8"
@@ -39,7 +41,7 @@ const InputsBox_SetChartData = () => {
         title="Druhé pole hodnot:"
         regex="numbers_dot_commas"
       />
-      
+
       <div className="button_box">
         <BTNSubmit form={form} navigate={navigate} />
       </div>
@@ -47,4 +49,4 @@ const InputsBox_SetChartData = () => {
   );
 };
 
-export default InputsBox_SetChartData;
+export default InputsBoxSetChartData;

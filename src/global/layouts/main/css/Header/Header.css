@@ -37,7 +37,6 @@ header .nav-box nav a.active {
   color: rgb(0, 140, 255);
 }
 
-/* Left Menu */
 @media (max-width: 550px) {
   header {
     flex-direction: column;

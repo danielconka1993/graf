@@ -14,25 +14,25 @@ const Header = () => {
   return (
     <header>
       <div className="nav-header">
-        <div>
+        <div></div>
 
-        </div>
-
-        <button className="humburger-button" onClick={() => setShowMenu(!showMenu)}>
+        <button
+          className="humburger-button"
+          onClick={() => setShowMenu(!showMenu)}
+        >
           <HiMenu className="hamburger-icon" />
         </button>
       </div>
 
       <div className="nav-box">
         <nav className={`${showMenu ? "show" : "hide"}`}>
-        <NavLink onClick={hideMenu} to="/graf">
+          <NavLink onClick={hideMenu} to="/graf">
             <FaChartLine /> Graf
           </NavLink>
 
-        <NavLink onClick={hideMenu} to="/">
+          <NavLink onClick={hideMenu} to="/">
             <HiHome /> Domu
           </NavLink>
-          
         </nav>
       </div>
     </header>

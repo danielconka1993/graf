@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/Home/Home.css";
 import { Link } from "react-router-dom";
-import InputsBox_SetGrafData from "../components/pages/Home/InputsBox_SetChartData";
+import InputsBoxSetGrafData from "../components/pages/Home/InputsBoxSetChartData";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <InputsBox_SetGrafData />
+        <InputsBoxSetGrafData />
       </div>
     </div>
   );

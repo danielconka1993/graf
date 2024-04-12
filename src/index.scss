@@ -35,11 +35,12 @@ a {
   text-shadow: 0 0 50px white;
 
   &:hover {
-    color: $title_text_color;
+    color: black;
   }
 }
 h1,
-p {
+p,
+h2 {
   cursor: default;
 }
 h1 {
@@ -94,6 +95,7 @@ input[type="text"] {
   @include flex-center;
   text-align: center;
   padding: 50px;
+  border-radius: 10px;
 }
 
 @media (max-width: $media-mobile) {

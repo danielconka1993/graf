@@ -14,7 +14,7 @@ header {
     align-items: center;
     min-height: $header-height;
 
-    .humburger-button{
+    .humburger-button {
       display: none;
     }
   }
@@ -35,7 +35,7 @@ header {
         transition: color 0.5s;
 
         &:hover {
-          color: $main_object_color
+          color: $main_object_color;
         }
 
         &.active {
@@ -46,8 +46,6 @@ header {
   }
 }
 
-/* Left Menu */
-
 @media (max-width: $media-mobile) {
   header {
     flex-direction: column;
@@ -57,19 +55,19 @@ header {
 
     .nav-header {
       width: 100%;
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
 
-        .humburger-button {
-          display: block;
-          background-color: transparent;
-          border: none;
-          margin: 0 18px;
+      .humburger-button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        margin: 0 18px;
 
-          .hamburger-icon {
-            color: $main_object_color;
-            font-size: 40px;
-          }
+        .hamburger-icon {
+          color: $main_object_color;
+          font-size: 40px;
+        }
       }
     }
 

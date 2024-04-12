@@ -6,11 +6,10 @@
   flex-direction: column;
 }
 .Error h1 {
-  font-size: 3.125em;
-  color: rgb(25, 25, 53);
+  font-size: 50px;
 }
 .Error a {
-  font-size: 4.375em;
+  font-size: 80px;
 }
 .Error a *:hover {
   box-shadow: 0 0 10px white;
