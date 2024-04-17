@@ -9,7 +9,7 @@ const BTNSubmit = ({ form, setError }) => {
 
     // const regex = /^(\d{1,2}|100)(,\s*\d{1,2}|,\s*100){7}$/; // 8* (0 - 100 Number)
 
-//repair regex
+//update regex with decimal numbers
 
     const regex = /^(\d{1,2}|\d{1,2}\.\d*|100)(,(\d{1,2}|\d{1,2}\.\d*|100)){7}$/; // 8* (0 - 100 Number)
     
