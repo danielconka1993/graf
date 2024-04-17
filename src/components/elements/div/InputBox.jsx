@@ -16,7 +16,7 @@ const InputBox = ({
 
     // only numbers_dot_commas
     if (regex === "numbers_dot_commas") {
-      const regex = /^[0-9,]*$/;
+      const regex = /^[0-9,.]*$/;
       if (!regex.test(value)) {
         return;
       }

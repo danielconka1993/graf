@@ -1,11 +1,11 @@
 import { useState } from "react";
 import InputBox from "../../elements/div/InputBox";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./css/InputsBox_SetChartData/InputsBox_SetChartData.css";
 import BTNSubmit from "./buttonSubmit/BTNSubmit";
 
 const InputsBoxSetChartData = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [form, setForm] = useState({
     data1: "",
@@ -51,7 +51,7 @@ const InputsBoxSetChartData = () => {
           <p className="error">{error}</p>
         </div>
         
-        <BTNSubmit form={form} navigate={navigate} setError={setError}/>
+        <BTNSubmit form={form} setError={setError}/>
       </div>
     </div>
   );

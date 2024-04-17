@@ -11,6 +11,7 @@ const GrafMain = () => {
   // useEffect to make data inputs work properly
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
+    // work with the entire search string and its parameters, instead of manually splitting and encoding each parameter
     const data1Param = searchParams.get("data1");
     const data2Param = searchParams.get("data2");
 
